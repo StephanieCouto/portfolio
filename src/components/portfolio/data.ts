@@ -54,13 +54,13 @@ export const projects: Project[] = [
     title: "Alerta de WhatsApp (Back-End)",
     stack: "Node.js • Axios • Node-cron",
     description: "Script para monitoramento de status de sites, com verificações periódicas via cron. Envia alertas automáticos quando o site fica offline.",
-    media: "/automacao1.jpg",
+    media: "/automacao3.jpg",
   },
   {
     title: "Alerta por Webhook (Back-End)",
     stack: "Node.js • Express.js • Ngrok",
     description: "API que recebe eventos via webhook e encaminha alertas em tempo real para o WhatsApp.",
-    media: "/webhook1.jpg",
+    media: "/webhook3.jpg",
   },
 ];
 
