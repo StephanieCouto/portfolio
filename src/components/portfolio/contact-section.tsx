@@ -20,7 +20,7 @@ export function ContactSection() {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.99 }}
         transition={{ duration: 0.22 }}
-        href="https://wa.me/554899600"
+        href="https://wa.me/5548999004859"
         target="_blank"
         rel="noopener noreferrer"
         className="neon-hover mt-8 inline-flex rounded-full border border-[#00D4FF]/60 bg-[#00D4FF]/12 px-7 py-3 text-sm font-semibold"
