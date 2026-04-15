@@ -6,6 +6,7 @@ export type Skill = {
 export type Project = {
   title: string;
   stack: string;
+  description: string;
   media: string;
 };
 

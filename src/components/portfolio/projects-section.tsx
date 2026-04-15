@@ -48,7 +48,10 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
             )}
             <div className="p-5">
               <h3 className="display-font text-xl font-semibold">{project.title}</h3>
-              <p className="mt-2 text-sm text-[#a1a1aa]">{project.stack}</p>
+              <span className="mt-3 inline-block rounded-full border border-[#3b82f6]/70 bg-[#3b82f6]/15 px-3 py-1 text-xs font-semibold tracking-wide">
+                {project.stack}
+              </span>
+              <p className="mt-3 text-sm leading-6 text-[#a1a1aa]">{project.description}</p>
             </div>
           </motion.article>
         ))}

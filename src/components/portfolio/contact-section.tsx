@@ -13,7 +13,7 @@ export function ContactSection() {
       <h2 className="display-font mt-4 text-3xl font-bold sm:text-5xl">
         Vamos construir algo incrível.
       </h2>
-      <p className="mt-4 max-w-2xl text-base leading-8 text-[#a1a1aa]">
+      <p className="mt-4 text-base leading-8 text-[#a1a1aa]">
         Me conta sua ideia ou necessidade. Posso te ajudar a transformar isso em uma interface clara, funcional e bem construída.
       </p>
       <motion.a

@@ -5,7 +5,7 @@ import { StarFieldCanvas } from "./starfield-canvas";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[78vh] overflow-hidden rounded-3xl border border-white/10 panel px-6 pb-14 pt-20 sm:px-12 sm:pt-24">
+    <section className="relative min-h-[68vh] flex items-center overflow-hidden rounded-3xl border border-white/10 panel px-6 pb-14 pt-20 sm:px-12 sm:pt-24">
       <StarFieldCanvas mode="hero" className="opacity-95" />
 
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.21),_rgba(5,7,10,0)_45%)]" />
