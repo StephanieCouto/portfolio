@@ -21,6 +21,12 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    title: "Nichoos Tecnologia",
+    stack: "Next.js • TypeScript • React",
+    description: "Site institucional voltado à apresentação da plataforma Nichoos e seus recursos.",
+    media: "/movies/nichoossite.mp4",
+  },
+  {
     title: "Momback Doces",
     stack: "Next.js • TypeScript • Tailwind",
     description: "Site institucional focado em apresentação de produtos e conversão, com integração ao WhatsApp.",
@@ -62,5 +68,6 @@ export const projects: Project[] = [
     description: "API que recebe eventos via webhook e encaminha alertas em tempo real para o WhatsApp.",
     media: "/webhook3.jpg",
   },
+  
 ];
 
