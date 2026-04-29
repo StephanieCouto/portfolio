@@ -32,6 +32,19 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(() => {
+  const key = "portfolio-theme";
+  const saved = localStorage.getItem(key);
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const theme = saved || (prefersDark ? "dark" : "light");
+  document.documentElement.dataset.theme = theme;
+})();`,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

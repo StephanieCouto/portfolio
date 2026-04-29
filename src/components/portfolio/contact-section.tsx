@@ -7,13 +7,13 @@ export function ContactSection() {
   return (
     <SectionReveal
       id="contato"
-      className="panel rounded-3xl border border-white/10 px-6 py-12 sm:px-10"
+      className="panel rounded-3xl px-6 py-12 sm:px-10"
     >
-      <p className="text-xs uppercase tracking-[0.26em] text-[#00D4FF]">Contato</p>
+      <p className="text-accent text-xs uppercase tracking-[0.26em]">Contato</p>
       <h2 className="display-font mt-4 text-3xl font-bold sm:text-5xl">
         Vamos construir algo incrível.
       </h2>
-      <p className="mt-4 text-base leading-8 text-[#a1a1aa]">
+      <p className="text-muted mt-4 text-base leading-8">
         Me conta sua ideia ou necessidade. Posso te ajudar a transformar isso em uma interface clara, funcional e bem construída.
       </p>
       <motion.a

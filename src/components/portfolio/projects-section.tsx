@@ -13,7 +13,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
     <SectionReveal>
       <div className="mb-5 flex items-end justify-between gap-4">
         <div>
-          <p className="text-xs uppercase tracking-[0.26em] text-[#00D4FF]">Projetos</p>
+          <p className="text-accent text-xs uppercase tracking-[0.26em]">Projetos</p>
           <h2 className="display-font mt-3 text-3xl font-bold sm:text-4xl">
             Trabalhos em Destaque
           </h2>
@@ -51,7 +51,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
               <span className="mt-3 inline-block rounded-full border border-[#3b82f6]/70 bg-[#3b82f6]/15 px-3 py-1 text-xs font-semibold tracking-wide">
                 {project.stack}
               </span>
-              <p className="mt-3 text-sm leading-6 text-[#a1a1aa]">{project.description}</p>
+              <p className="text-muted mt-3 text-sm leading-6">{project.description}</p>
             </div>
           </motion.article>
         ))}

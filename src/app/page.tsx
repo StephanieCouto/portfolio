@@ -6,11 +6,16 @@ import { HeroSection } from "@/components/portfolio/hero-section";
 import { ProjectsSection } from "@/components/portfolio/projects-section";
 import { SkillsSection } from "@/components/portfolio/skills-section";
 import { StarFieldCanvas } from "@/components/portfolio/starfield-canvas";
+import { ThemeToggle } from "@/components/portfolio/theme-toggle";
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-clip text-white">
+    <div className="relative overflow-x-clip text-[color:var(--foreground)]">
       <CursorGlow />
+
+      <div className="fixed right-4 top-4 z-50 sm:right-8 sm:top-6">
+        <ThemeToggle />
+      </div>
 
         <HeroSection />
 

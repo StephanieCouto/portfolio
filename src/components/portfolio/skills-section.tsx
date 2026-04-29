@@ -11,7 +11,7 @@ type SkillsSectionProps = {
 export function SkillsSection({ items }: SkillsSectionProps) {
   return (
     <SectionReveal>
-      <p className="mb-4 text-xs uppercase tracking-[0.26em] text-[#00D4FF]">
+      <p className="text-accent mb-4 text-xs uppercase tracking-[0.26em]">
         Especialidades
       </p>
       <div className="grid gap-5 sm:grid-cols-2">
@@ -23,7 +23,7 @@ export function SkillsSection({ items }: SkillsSectionProps) {
             className="panel neon-hover rounded-2xl p-6"
           >
             <h3 className="display-font text-xl font-semibold">{skill.title}</h3>
-            <p className="mt-3 text-sm leading-7 text-[#a1a1aa]">{skill.description}</p>
+            <p className="text-muted mt-3 text-sm leading-7">{skill.description}</p>
           </motion.article>
         ))}
       </div>
