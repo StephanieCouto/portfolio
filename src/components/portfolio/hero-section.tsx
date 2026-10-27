@@ -42,14 +42,14 @@ export function HeroSection() {
           >
             LinkedIn
           </a>
-          <a
+          {/* <a
             href="https://github.com/StephanieCouto"
             target="_blank"
             rel="noopener noreferrer"
             className="secondary-cta neon-hover rounded-full px-5 py-3 text-sm"
           >
             GitHub
-          </a>
+          </a> */}
           <a
             href="mailto:scanholato.stephanie@gmail.com"
             className="secondary-cta neon-hover rounded-full px-5 py-3 text-sm"
