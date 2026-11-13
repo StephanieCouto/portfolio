@@ -21,6 +21,12 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    title: "Simulador e IA para negociação",
+    stack: "Google Gemini • Next.js • JavaScript • React",
+    description: "O simulador calcula o orçamento e compartilha as informações com a AI. A assistente negocia uma condição de pagamento, respeitando as regras definidas. Ao final, gera uma proposta e a encaminha à autoescola.",
+    media: "/movies/katyfinal2.mp4",
+  },
+  {
     title: "Nichoos Tecnologia",
     stack: "Next.js • TypeScript • React",
     description: "Site institucional voltado à apresentação da plataforma Nichoos e seus recursos.",

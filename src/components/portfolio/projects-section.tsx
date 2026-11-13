@@ -1,12 +1,54 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 import type { Project } from "./types";
 import { SectionReveal } from "./section-reveal";
 
 type ProjectsSectionProps = {
   items: Project[];
 };
+
+function ProjectVideo({ src }: { src: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  return (
+    <div className="relative">
+      <video
+        ref={videoRef}
+        src={src}
+        muted
+        loop
+        playsInline
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        className="h-48 w-full object-cover"
+      />
+      <button
+        type="button"
+        onClick={() => {
+          const video = videoRef.current;
+          if (!video) return;
+
+          if (isPlaying) {
+            video.pause();
+          } else {
+            void video.play().catch((error: unknown) => {
+              console.error("Não foi possível reproduzir o vídeo do projeto.", error);
+            });
+          }
+        }}
+        aria-label={isPlaying ? "Pausar vídeo" : "Reproduzir vídeo"}
+        className="absolute inset-0  flex items-center justify-center"
+      >
+        <span className="text-[2.6rem] p-4 text-black">
+          {isPlaying ? "" : "▶"}
+        </span>
+      </button>
+    </div>
+  );
+}
 
 export function ProjectsSection({ items }: ProjectsSectionProps) {
   return (
@@ -29,14 +71,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
             className="panel neon-hover overflow-hidden rounded-2xl"
           >
             {project.media.match(/\.(mp4|webm|ogg)$/i) ? (
-              <video
-                src={project.media}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="h-48 w-full object-cover"
-              />
+              <ProjectVideo src={project.media} />
             ) : (
               <img
                 src={project.media}
