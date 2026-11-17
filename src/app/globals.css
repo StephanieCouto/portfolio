@@ -39,6 +39,9 @@ html[data-theme="dark"] {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--panel-border) transparent;
+  
 }
 
 body {

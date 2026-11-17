@@ -8,6 +8,7 @@ export type Project = {
   stack: string;
   description: string;
   media: string;
+  video: string;
 };
 
 export type Highlight = {
